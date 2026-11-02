@@ -43,8 +43,9 @@ desktop.ini
 # ===== RAG 工程产物 =====
 # 文档导入产生的临时/解析文件（DATA_BASED_ROOT_DIR）
 output/
-# 评测生成的报告与明细（保留脚本 eval/retrieval_eval.py 与数据集 dataset.jsonl 即可）
+# 评测产物与测试数据不入库（本地保留：品牌设备手册衍生的测试集有版权风险）
 eval/results/
+eval/dataset.jsonl
 eval/_*.jsonl
 
 # 本地开发库数据（若在本地起 Milvus / MinIO / Mongo）
