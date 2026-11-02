@@ -1,0 +1,15 @@
+from dataclasses import dataclass
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
+
+@dataclass
+class McpConfig:
+    mcp_base_url: str
+    api_key: str
+
+mcp_config = McpConfig(
+    mcp_base_url=os.getenv("MCP_DASHSCOPE_BASE_URL"),
+    api_key=os.getenv("MCP_API_KEY")
+)

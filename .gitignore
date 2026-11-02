@@ -1,0 +1,53 @@
+# ===== Python =====
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+build/
+dist/
+*.so
+
+# ===== 虚拟环境 / 包管理 =====
+.venv/
+venv/
+env/
+.uv_cache/
+
+# ===== 配置与密钥（切勿提交） =====
+# .env 含 API Key / 数据库地址；如需模板请另建 .env.example 并提交
+.env
+.env.*
+!.env.example
+
+# ===== 测试与缓存 =====
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+*.log
+logs/
+
+# ===== IDE / 编辑器 =====
+.idea/
+.vscode/
+*.swp
+*.sln
+
+# ===== 操作系统 =====
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ===== RAG 工程产物 =====
+# 文档导入产生的临时/解析文件（DATA_BASED_ROOT_DIR）
+output/
+# 评测生成的报告与明细（保留脚本 eval/retrieval_eval.py 与数据集 dataset.jsonl 即可）
+eval/results/
+eval/_*.jsonl
+
+# 本地开发库数据（若在本地起 Milvus / MinIO / Mongo）
+milvus_data/
+minio_data/
+mongodb_data/
